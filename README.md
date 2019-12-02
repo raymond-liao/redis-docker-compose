@@ -4,14 +4,21 @@ A docker-compose sample to start redis.
 
 # How to use?
 
-1. Start `Redis` via [docker-compose](https://docs.docker.com/compose/) in terminal:
+1. Clone the project:
 
   ```shell
-    docker-compose up -d
+    $ git clone https://github.com/gaoshanyu/redis-docker-compose.git
   ```
 
-2. Connect to the Redis server:
+2. Start `Redis` via [docker-compose](https://docs.docker.com/compose/) in terminal:
 
   ```shell
-    docker exec -ti redis redis-cli -h 127.0.0.1 -p 6379 -a 12345678
+    $ cd ./redis-docker-compose
+    $ docker-compose up -d
+  ```
+
+3. Connect to the Redis server:
+
+  ```shell
+    $ docker exec -ti redis redis-cli -h 127.0.0.1 -p 6379 -a 12345678
   ```
