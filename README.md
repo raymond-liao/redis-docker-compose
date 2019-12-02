@@ -1,5 +1,5 @@
 # redis-docker-compose
-A docker-compose sample to start redis.
+A [docker-compose](https://docs.docker.com/compose/) sample to start `Redis` database.
 
 
 # How to use?
