@@ -22,3 +22,7 @@ A [docker-compose](https://docs.docker.com/compose/) sample to start `Redis` dat
   ```shell
     $ docker exec -ti redis redis-cli -h 127.0.0.1 -p 6379 -a 12345678
   ```
+
+# Q&A
+1. How to change password?
+  * Just change the line `requirepass 12345678` in file `redis.conf` to `requirepass [new password]`, and then restart the service.
